@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+<script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+  
+  
+
+</head>
+
+<body>
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Welcome on Drivy !</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Available cars on Drivy</a></li>
+        <li><a href="https://fr.linkedin.com/in/alex-mouturat-42871177">Drop by my LinkedIn profil !</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="">Available cars on Drivy</a></li>
+        <li><a href="https://fr.linkedin.com/in/alex-mouturat-42871177">Drop by our LinkedIn profil !</a></li>
+        <li><a href="https://www.facebook.com/drivyfr/">Drop by our Facebook page !</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Drivy</h1>
+      <div class="row center">
+
+        <h5 class="header col s12 light">Brand new application to easily rent a car ! </h5>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+      <div id="car">
+      <input class="model" type="text" placeholder="Car model"/>
+      <input class="price-by-day" type="number" placeholder="Price by day"/>
+      <input class="price-by-km" type="number" placeholder="Price by km"/>
+    </div>
+    <div id="rental">
+      <input class="begin" type="date" placeholder="Rental begin date"/>
+      <input class="end" type="date" placeholder="Rental end date"/>
+      <input class="distance" type="number" placeholder="Distance in km"/>
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+    </div>
+    <br>
+    <div class="row center">
+        <a id="compute" class="btn-large waves-effect waves-light orange">Get the price !</a>
+      </div>
+      <br><br>
+    
+
+    <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+
+
+    </div>
+  </div>
+      
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Rent the car you love !</h5>
+
+            <p class="light">Just choose the car that suits you amongst our large selection ! </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Rent a car efficiently...</h5>
+
+            <p class="light">It only takes up to 10 minutes to fill out all the forms to finally get you car reservation ! </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">...and without headache !</h5>
+
+            <p class="light">Do not worry about insurance, papers etc.. We process all the procedures needed with our insurance partner ! You can leave with peace of mind with Drivy !</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Just a little tutorial to learn web design !</h5>
+  
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Some links : </h5>
+          <ul>
+            <li><a class="white-text" href="#!">Car description</a></li>
+            <li><a class="white-text" href="#!">Find us !</a></li>
+            <li><a class="white-text" href="#!">Contact us !</a></li>
+            <li><a class="white-text" href="#!">Frequently asked questions</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Follow us ! </h5>
+          <ul>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="https://fr.linkedin.com/in/alex-mouturat-42871177">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
